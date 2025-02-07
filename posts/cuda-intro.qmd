@@ -1,0 +1,33 @@
+---
+title: "Introduction to CUDA Programming"
+date: 2025-02-07
+author: "fate"
+---
+
+## What is CUDA?
+CUDA is NVIDIA's parallel computing platform for GPU acceleration.
+
+### C++ Code Block
+```cpp
+#include <iostream>
+int main() {
+  std::cout << "Hello from C++!\n";
+  return 0;
+}
+```
+
+### CUDA Kernel Example
+```cpp
+__global__ void addVectors(float *a, float *b, float *c, int n) {
+  int i = blockIdx.x * blockDim.x + threadIdx.x;
+  if (i < n) c[i] = a[i] + b[i];
+}
+```
+
+### Explanation
+- `__global__`: Indicates a CUDA kernel.
+- Threads/blocks organize parallel execution.
+```bash
+# Compile CUDA code with nvcc
+nvcc -o vector_add vector_add.cu
+```

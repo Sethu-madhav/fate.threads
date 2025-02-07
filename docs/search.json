@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "posts/cuda-intro.html",
+    "href": "posts/cuda-intro.html",
+    "title": "Introduction to CUDA Programming",
+    "section": "",
+    "text": "CUDA is NVIDIA’s parallel computing platform for GPU acceleration.\n\n\n#include &lt;iostream&gt;\nint main() {\n  std::cout &lt;&lt; \"Hello from C++!\\n\";\n  return 0;\n}\n\n\n\n__global__ void addVectors(float *a, float *b, float *c, int n) {\n  int i = blockIdx.x * blockDim.x + threadIdx.x;\n  if (i &lt; n) c[i] = a[i] + b[i];\n}\n\n\n\n\n__global__: Indicates a CUDA kernel.\nThreads/blocks organize parallel execution.\n\n# Compile CUDA code with nvcc\nnvcc -o vector_add vector_add.cu"
+  },
+  {
+    "objectID": "posts/cuda-intro.html#what-is-cuda",
+    "href": "posts/cuda-intro.html#what-is-cuda",
+    "title": "Introduction to CUDA Programming",
+    "section": "",
+    "text": "CUDA is NVIDIA’s parallel computing platform for GPU acceleration.\n\n\n#include &lt;iostream&gt;\nint main() {\n  std::cout &lt;&lt; \"Hello from C++!\\n\";\n  return 0;\n}\n\n\n\n__global__ void addVectors(float *a, float *b, float *c, int n) {\n  int i = blockIdx.x * blockDim.x + threadIdx.x;\n  if (i &lt; n) c[i] = a[i] + b[i];\n}\n\n\n\n\n__global__: Indicates a CUDA kernel.\nThreads/blocks organize parallel execution.\n\n# Compile CUDA code with nvcc\nnvcc -o vector_add vector_add.cu"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My fun writings and experiments.",
+    "section": "",
+    "text": "Introduction to CUDA Programming\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\nfate\n\n\n\n\n\n\nNo matching items"
+  }
+]
