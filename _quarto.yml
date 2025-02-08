@@ -9,14 +9,13 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - href: posts/
-        text: Posts
+      - posts.qmd
+
 
 format:
   html:
     theme:
-      - darkly
-      - brand
+      - litera
     css: styles.css
     toc: true
 

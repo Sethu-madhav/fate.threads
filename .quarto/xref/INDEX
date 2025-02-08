@@ -10,5 +10,8 @@
   },
   "posts/cuda-intro.qmd": {
     "cuda-intro.html": "275b8d24"
+  },
+  "posts.qmd": {
+    "posts.html": "b5ce117c"
   }
 }

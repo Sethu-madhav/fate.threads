@@ -4,5 +4,11 @@
     "items": [
       "/posts/cuda-intro.html"
     ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/cuda-intro.html"
+    ]
   }
 ]
